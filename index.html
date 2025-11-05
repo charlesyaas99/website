@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - Contoh Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center px-8 py-4 shadow-md bg-white fixed w-full top-0 z-10">
+      <h1 class="text-2xl font-bold text-blue-600">BrandName</h1>
+      <ul class="hidden md:flex space-x-8">
+        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#features" class="hover:text-blue-600">Fitur</a></li>
+        <li><a href="#pricing" class="hover:text-blue-600">Harga</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Kontak</a></li>
+      </ul>
+      <button class="md:hidden text-2xl">☰</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-28 pb-16 bg-gradient-to-r from-blue-50 to-blue-100">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+          Solusi Digital untuk Bisnis Anda
+        </h2>
+        <p class="text-lg text-gray-600 mb-8">
+          Kami membantu bisnis Anda tumbuh lebih cepat dengan teknologi modern dan desain menarik.
+        </p>
+        <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700 transition">
+          Mulai Sekarang
+        </a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-semibold mb-12">Kenapa Memilih Kami?</h3>
+        <div class="grid md:grid-cols-3 gap-10">
+          <div class="p-6 bg-white shadow-md rounded-lg">
+            <div class="text-blue-600 text-4xl mb-4">⚡</div>
+            <h4 class="font-bold text-xl mb-2">Cepat & Responsif</h4>
+            <p>Kami memastikan website Anda cepat diakses di semua perangkat.</p>
+          </div>
+          <div class="p-6 bg-white shadow-md rounded-lg">
+            <div class="text-blue-600 text-4xl mb-4">🎨</div>
+            <h4 class="font-bold text-xl mb-2">Desain Menarik</h4>
+            <p>Tampilan profesional yang menarik dan sesuai dengan identitas bisnis Anda.</p>
+          </div>
+          <div class="p-6 bg-white shadow-md rounded-lg">
+            <div class="text-blue-600 text-4xl mb-4">🔒</div>
+            <h4 class="font-bold text-xl mb-2">Keamanan Terjamin</h4>
+            <p>Kami mengutamakan keamanan data dan performa website Anda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="bg-gray-50 py-20">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-semibold mb-12">Pilih Paket yang Sesuai</h3>
+        <div class="grid md:grid-cols-3 gap-10">
+          <!-- Paket 1 -->
+          <div class="bg-white shadow-lg rounded-lg p-8">
+            <h4 class="text-xl font-bold mb-4">Basic</h4>
+            <p class="text-gray-600 mb-6">Cocok untuk pemula.</p>
+            <p class="text-4xl font-bold mb-6">Rp199rb</p>
+            <ul class="mb-6 space-y-2 text-gray-600">
+              <li>✔ 1 Halaman Website</li>
+              <li>✔ Desain Responsif</li>
+              <li>✔ Hosting Gratis 1 Bulan</li>
+            </ul>
+            <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Pilih Paket</a>
+          </div>
+
+          <!-- Paket 2 -->
+          <div class="bg-blue-600 text-white shadow-lg rounded-lg p-8 transform scale-105">
+            <h4 class="text-xl font-bold mb-4">Pro</h4>
+            <p class="mb-6">Untuk bisnis berkembang.</p>
+            <p class="text-4xl font-bold mb-6">Rp499rb</p>
+            <ul class="mb-6 space-y-2">
+              <li>✔ 5 Halaman Website</li>
+              <li>✔ SEO Optimization</li>
+              <li>✔ Support 24/7</li>
+            </ul>
+            <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-100">Pilih Paket</a>
+          </div>
+
+          <!-- Paket 3 -->
+          <div class="bg-white shadow-lg rounded-lg p-8">
+            <h4 class="text-xl font-bold mb-4">Enterprise</h4>
+            <p class="text-gray-600 mb-6">Solusi lengkap untuk perusahaan.</p>
+            <p class="text-4xl font-bold mb-6">Rp999rb</p>
+            <ul class="mb-6 space-y-2 text-gray-600">
+              <li>✔ Custom Desain</li>
+              <li>✔ Integrasi API</li>
+              <li>✔ Dukungan Premium</li>
+            </ul>
+            <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Pilih Paket</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-semibold mb-8">Hubungi Kami</h3>
+        <form class="space-y-4">
+          <input type="text" placeholder="Nama Anda" class="w-full border border-gray-300 rounded-lg px-4 py-3" />
+          <input type="email" placeholder="Email" class="w-full border border-gray-300 rounded-lg px-4 py-3" />
+          <textarea placeholder="Pesan Anda" class="w-full border border-gray-300 rounded-lg px-4 py-3 h-32"></textarea>
+          <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Kirim</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+      <p>© 2025 BrandName. Semua Hak Dilindungi.</p>
+    </footer>
+
+  </body>
+</html>
